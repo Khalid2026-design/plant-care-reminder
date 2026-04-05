@@ -1,0 +1,275 @@
+:root{
+    --main: rgba(245, 245, 220, 0.732);
+    --secondary:#062a06;
+}
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background-color: var(--main);
+}
+
+ 
+nav{
+    width: 100%;
+    min-height: 70px;
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+nav h1{
+    font-size: 2.5rem;
+    color: var(--secondary);
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    gap: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--secondary);
+}
+
+.icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+ 
+button{
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+}
+
+.add{
+    background-color: var(--secondary);
+    color: white;
+}
+
+ 
+main{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.m{
+    width: 50%;
+}
+
+.ilistration{
+    width: 70%;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.right{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.right h1{
+    font-size: 3.5rem;
+    color: var(--secondary);
+}
+
+.right p{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--secondary);
+}
+
+.btn{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+ 
+.firstsection{
+    padding: 40px 20px;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Service{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.s1{
+    width: 280px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    color: var(--secondary);
+}
+
+ 
+.secoundction{
+    display: flex;
+    padding: 40px 20px;
+
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.first, .secound{
+    width: 50%;
+}
+.secound{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 40px;
+}
+.secound ul{
+    margin-right: 40px;
+}
+.pimage{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.secound{
+    direction: rtl;
+}
+
+ 
+.section3{
+    background-color: var(--secondary);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.peopleidea{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.a1{
+    width: 280px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #0b3d0b;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uimage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ditilse{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+ 
+footer{
+    background: var(--main);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+ 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ 
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .m{
+        width: 100%;
+    }
+
+    .right h1{
+        font-size: 1.8rem;
+    }
+
+    .btn{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secoundction{
+        flex-direction: column;
+    }
+
+    .first, .secound{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer ul{
+        flex-direction: column;
+    }
+}
