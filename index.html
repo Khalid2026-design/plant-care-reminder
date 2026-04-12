@@ -1,172 +1,119 @@
 <!DOCTYPE html>
-<html lang="pashto">
+<html lang="ps" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>د بوټو پالنه</title>
+    <meta name="description" content="د نباتاتو پالنه او یادونې - خپل کور ته طبیعت ورکړئ">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>د بوټو پالنه 🌱 | کور پاڼه</title>
 </head>
 <body>
 
     <nav>
+        <div class="logo">
+            <h1>🌿 د بوټو پالنه</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">کور پاڼه</a></li>
+            <li><a href="plants.html">نباتات</a></li>
+            <li><a href="add-plant.html">بوټی اضافه کړئ</a></li>
+            <li><a href="reminder.html">یادونې</a></li>
+            <li><a href="reports.html">راپورونه</a></li>
+            <li><a href="contact.html">اړیکه</a></li>
+            <a class="navloginbutton" style="display: none;" href="./login.html"><button  class="loginb">Login</button></a>
 
-        <h1>د بوټو پالنه</h1>
-
-        <ul>
-            <li><a href="" style="border: 1px solid black;border-radius: 20px; background-color: black;color: antiquewhite;">کور پاڼه</a></li>
-            <li><a href="./list.html">بوټی</a></li>
-            <li><a href="">مهال ویش</a></li>
-            <li><a href="">لارشود</a></li>
-
-            
         </ul>
-
-        <div class="icon">
-            <button class="add button">خپل بوټی اظافه کږی</button>
-            <h2>🔎</h2>
-            <h2>🧕</h2>
-            <h2>🔔</h2>
+        <div class="nav-icons">
+            <span class="icon">🔔</span>
+            <span class="icon">👤</span>
+            <a href="./login.html"><button class="loginb">Login</button></a>
             
         </div>
-
     </nav>
 
-    <main>
-        <div class="m left">
-            <img class="ilistration" src="../image/pexels-dbaler-30776046.jpg" alt="">
-        
-        </div>
-        <div class="m right">
-            <h1 >خپل کور ته د   طبیعت ساه ورکړی</h1>
-            <p>زموږ سره د خپلو نباتاتو په پالنه کی مرسته وکړی موږ به تاسو په سمه توګه دروشیو <br>چی څه وخت و خپلونباتاتو ته اوبه یا بل شی ورکړی...</p>
-            <div class="btn">
-            
-            <button > نور معلومات👈</button>
-            <button class="add">    اوس پیل کړی</button>
+    <main class="hero">
+      
+        <div class="hero-text">
+            <h1>د نباتاتو ساتنه اسانه کړئ 🌱</h1>
+            <p>زموږ سره د خپلو نباتاتو په پالنه کې مرسته وکړئ. موږ تاسو ته وخت په وخت یادونې ورکوو چې کله خپلو بوټو ته اوبه ورکړئ، سره ورکړئ او پاملرنه وکړئ.</p>
+            <div class="hero-btns">
+                <a href="add-plant.html" class="btn-primary">اوس پیل کړئ 🚀</a>
+                <a href="#features" class="btn-secondary">نور معلومات 👈</a>
             </div>
+        </div>
 
-           
-
+          <div class="hero-img">
+            <!-- <img src="images/hero.jpg" alt="نباتات"> -->
+             <video src="./images/8410461-sd_426_240_30fps.mp4" autoplay loop></video>
         </div>
     </main>
 
-    <section class="firstsection">
-        <h2>هغه څه چی موژ یی وړاندی کوو</h2>
-        <div class="Service">
-            <div class="s1">
-                <h1>☘️</h1>
-                <h2>د نباتاتو کتابتون</h2>
-                <p>د زرکونو نباتاتو په هکله معلومات ترلاسه کړی او ومومی چی ستاسو د کور لپاره  کوم یو ډیر مناسب دی </p>
+    <section class="features" id="features">
+        <div class="section-title">
+            <h2>هغه څه چې موږ یې وړاندې کوو</h2>
+            <p>ستاسو د نباتاتو پالنه لپاره بشپړ حل</p>
+        </div>
+        <div class="feature-cards">
+            <div class="f-card">
+                <div class="f-icon">💧</div>
+                <h3>د اوبو یادونې</h3>
+                <p>هیڅکله د خپلو نباتاتو د اوبو ورکولو وخت هېر نه کړئ. موږ تاسو ته سمدستي خبرداری ورکوو.</p>
             </div>
-            <div class="s1">
-                <h1>👨‍🏫</h1>
-                <h2>ځانکړی لارښوونی </h2>
-                <p>هر نباتات ځانکړی پاملرنی ته اړتیا لری موږ تاسو ته د هر بوټی لپاره د متخصیصنو لخوا چمتو شوی لارښوونی وړاندی کوو</p>
+            <div class="f-card">
+                <div class="f-icon">☘️</div>
+                <h3>د بوټو تعقیب</h3>
+                <p>د خپلو ټولو نباتاتو حالت وګورئ او د هرې ورځې پرمختګ تعقیب کړئ.</p>
             </div>
-            <div class="s1">
-                <h1>🔔</h1>
-                <h2>سمدستی یادونی </h2>
-                <p>تاسو به هیڅکله د خپلو نباتاتو د اوبه کولو یا سری ورکولو وخت هیر نه کی زموږ هوشیاری یادونی هر څه کنټرولوی </p>
+            <div class="f-card">
+                <div class="f-icon">📊</div>
+                <h3>هوښیار حالت</h3>
+                <p>سیستم پخپله ستاسو د نباتاتو حالت ارزوي او تاسو ته مشوره درکوي.</p>
+            </div>
+            <div class="f-card">
+                <div class="f-icon">✨</div>
+                <h3>اسانه کارول</h3>
+                <p>ساده او ښکلی ډیزاین چې هرڅوک یې په اسانۍ سره کارولی شي.</p>
             </div>
         </div>
     </section>
 
-    <section class="secoundction">
-        <div class="first"><img class="pimage" src="../image/Photos 4_3_2026 5_48_37 PM.png" alt=""></div>
-        <div class="secound">
-
-            <h1>خپل کور په شنه جنت بدل کړی</h1>
-
+    <section class="about-section">
+       
+        <div class="about-text">
+            <h2>خپل کور په شنه جنت بدل کړئ</h2>
+            <p>دا سیستم ستاسو لپاره جوړ شوی دی ترڅو د نباتاتو پالنه اسانه او خوندوره شي. له دې وروسته به هیڅکله ستاسو بوټی مړاوي نه شي!</p>
             <ul>
-                <li>
-                    <h2>روغتایی ګټی</h2>
-                    <p>بوټی نه یواځی هوا پاکوی بلکی ستاسو ذهنی فشار هم کموی او خوشحالی راولی </p>
-                </li>
-                <li>
-                    <h2>ښکلا او ډیزاین</h2>
-                    <p>طیبعی شین رنګ ستاسو کور ته یو ارام او په زړه پوری لید ورکوی</p>
-                </li>
-                <li>
-                    <h1>اسانه پالنه</h1>
-                    <p>زموږ دا ویب پاڼه  به ستاسو د نباتاتو پالنه اسانه او ساده کړی </p>
-                </li>
+                <li><strong>روغتیایي ګټې:</strong> بوټي هوا پاکوي، ذهني فشار کموي او خوشحالي راولي.</li>
+                <li><strong>ښکلا او ډیزاین:</strong> شنه رنګ ستاسو کور ته ارام او ښکلی لید ورکوي.</li>
+                <li><strong>اسانه پالنه:</strong> زموږ ویب پاڼه د نباتاتو پالنه ساده کوي.</li>
             </ul>
         </div>
-    </section>
+         <div class="about-img">
 
-
-    <section class="section3">
-        <h6>زموږ د کارکونکو غژ</h6>
-        <h1>خلک زموږ په اړه څه وایی</h1>
-        <div class="peopleidea">
-            <div class="a1">
-                <div class="top">
-                    <div>
-                        <h1>احمد</h1>
-                        <h6>محصل</h6>
-                    </div>
-                    <div>
-                        <img class="uimage" src="../image/IMG-20250520-WA0062.jpg" alt="">
-                        
-                    </div>
-                        
-                        
-                </div>
-                <div class="battom">
-                    <p class="ditilse">دا ویب باڼه ډیزاین ډیر شکلی او کارول یی ډیر اسانه دی اوس زما کوټه ډیره شایسته شکاری</p>
-                </div>
-            </div>
-            <div class="a1">
-                 <div class="top">
-                    <div>
-                        <h1>محمد</h1>
-                        <h6>نبات پیژندونکی</h6>
-                    </div>
-                    <div>
-                        <img class="uimage" src="../image/IMG-20250520-WA0062.jpg" alt="">
-                        
-                    </div>
-                        
-                        
-                </div>
-                <div class="battom">
-                    <p class="ditilse">دا د هغو کسانو لپاره غوره وسیله ده چی غواړی د خپلو نباتاتو په هکله مسلکی معلومات او پر وخت یادونی ترلاسه کړی</p>
-                </div>
-            </div>
-            <div class="a1">
-                 <div class="top">
-                    <div>
-                        <h1>خان</h1>
-                        <h6>د کور خاوند</h6>
-                    </div>
-                    <div>
-                        <img class="uimage" src="../image/IMG-20250520-WA0062.jpg" alt="">
-                        
-                    </div>
-                        
-                        
-                </div>
-                <div class="battom">
-                    <p class="ditilse">له کومه راهیسی چی ما ددی ویب پاڼی کارول پیل کړی دی زما د کور ټول بوټی ډیر شنه او منظم شوی ډیره مننننه</p>
-                </div>
-            </div>
-
-            
+            <img src="../plant-carecomp/images/pexels-dbaler-30776046.jpg" alt="">
         </div>
-        <footer>
-        <h2>د بوټو پالنه</h2>
-        <ul>
-            <li><a href="">اړیکی</a></li>
-            <li><a href="">زموږ په اړه</a></li>
-            <li><a href="">پالیسی</a></li>
-            <li><a href="">مرسته</a></li>
-        </ul>   
-         <h5> د بوټو پالنی ویب پاڼی ټول حقوق خوندی دی</h5>     
-        </footer>
-
     </section>
 
-    
-    
+    <section class="cta">
+        <h2>اوس خپل لومړنی بوټی اضافه کړئ! 🌿</h2>
+        <p>نن ورځ پیل وکړئ او خپل کور ته ژوند ورکړئ</p>
+        <a href="add-plant.html" class="btn-cta">بوټی اضافه کړئ ➕</a>
+    </section>
+
+    <footer>
+        <h2>د بوټو پالنه 🌿</h2>
+        <ul>
+            
+            <li><a href="mailto:khalid@example.com?subject=Hello Khalid"><img src="../plant-carecomp/iconn/emil.png"  alt=""></a></li>
+            <li><a href="https://www.facebook.com/khalid.khalid.afghan.2025"><img src="../plant-carecomp/iconn/icons8-facebook-50.png" class="links" alt=""></a></li>
+            <li><a href="https://wa.me/qr/LKYP5WSPYEVKE1"><img src="../plant-carecomp/iconn/icons8-whatsapp-50.png" class="links" alt=""></a></li>
+            <li><a href=" https://github.com/Khalid2026-design"><img src="../plant-carecomp/iconn/icons8-linkedin-50.png" class="links" alt=""></a></li>
+        </ul>
+        <h5>د بوټو پالنی ویب پاڼی ټول حقوق خوندی دی © 2025</h5>
+    </footer>
+
 </body>
 </html>
